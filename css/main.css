@@ -1,0 +1,433 @@
+@charset "UTF-8";
+
+@-moz-viewport {width: device-width; scale: 1;}
+@-ms-viewport {width: device-width; scale: 1;}
+@-webkit-viewport {width: device-width; scale: 1;}
+@-o-viewport {width: device-width; scale: 1;}
+@viewport {width: device-width; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+/*HEADER*/
+	
+header{
+	background-color: rgba(235,235,235,0.8);
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+.logo {
+	margin: 15px;
+}
+
+.nav-btn, 
+.nav-btn:link, 
+.nav-btn:visited{
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 30px;
+	right: 2%;
+	background: url(../images/nav-icon.svg) no-repeat right center;
+}
+
+nav{
+	width: 100%;
+	float: right;
+	margin: 1.6em 0;
+	right: 5em;
+}
+
+nav li, 
+nav li:link, 
+nav li:visited{
+	list-style: none;
+	float: right;
+	margin: 0 1em;
+	color: grey;
+}
+
+nav li:hover,
+nav li:focus,
+nav li:active{	
+	color: white;
+}
+
+.nav-top{
+	display: none;
+}
+
+@media only screen and (min-width: 35em) {
+	
+	.nav-top[data-state="expanded"]{
+	display: inline;
+	position: absolute;
+	margin-bottom: 30px;
+}
+
+}
+
+@media only screen and (max-width: 35em) {
+	
+	.nav-top[data-state="expanded"]{
+		display: block;
+		margin: 0;
+	}
+
+	nav li{
+		width: 100%;
+		text-align: center;
+		margin-right: 0;
+		margin-left: 0;
+		background-color: #CCCCCC;
+		padding: 1em;
+	}
+	
+	.dark{
+		background-color: #B2B2B2;
+	}
+	
+	.darker{
+		background-color: #8A8A8A;
+	}
+}
+
+/*HEADER END*/
+
+h1{
+	font-size: 85px;
+	text-align: center;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+}
+
+.name{
+	background-color: #858585;
+	padding: 15% 10% 10% 10%;
+}
+
+@media only screen and (max-width: 38em) {
+	
+	h1{
+		font-size: 70px;
+	}
+	
+	.name{
+		padding: 20% 10% 10% 10%;
+	}
+}
+
+@media only screen and (max-width: 32em) {
+	
+	h1{
+		display: none;
+	}
+	
+	.name{
+		height: 150px;
+	}
+}
+
+h2{
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+}
+
+/*ABOUT*/
+
+.about{
+	margin: 15% 25%;
+}
+
+@media only screen and (max-width: 35em) {
+	.about{
+		margin: 15%;
+	}
+}
+
+/*ABOUT END*/
+
+/*WORK*/
+
+.work{
+	margin: 15% 5%;
+}
+
+.left{
+	overflow: hidden;
+	display: block;
+	text-align: center;
+}
+
+.view{
+	width: 40%;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+	backround: #000000;
+	margin: 20px;
+	float: left;
+}
+
+@media only screen and (max-width: 79em) {
+	.view{
+		width: 40%;
+	}
+	
+	.view .mask{
+		width: 40%;
+	}
+}
+
+.view .mask{
+	width: 40%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+.view p {
+    font-family: 'Roboto', serif;
+    font-size: 18px;
+    position: relative;
+    color: #fff;
+	margin-top: -10px;
+    padding: 10px 20px 20px;
+    text-align: center; /*this line changes where the description ends up*/
+}
+
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+	font-size: 28px;
+	margin-top: 130px;
+}
+
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(30,30,30, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+
+.view-first p { 
+    transform: translateY(100px);  
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.view-first:hover .mask { 
+    opacity: 1;
+}
+
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+
+.work a{
+	margin: .75em;
+}
+
+/*WORK END*/
+
+/*CONTACT*/
+
+
+.contact{
+	margin: 15%;
+}
+
+.icon{
+	width: 120px;
+	display: inline-block;
+	margin-right: 2em;
+}
+
+.social{
+	display: block;
+	text-align: center;
+}
+
+@media only screen and (max-width: 21.75em) {
+	.contact h2{
+		font-size: 30px;
+	}
+}
+
+/*CONTACT END*/
+
+/*PROJECT PAGE*/
+
+.piece-title{
+	margin-top: 200px;
+}
+
+.image1{
+	margin-top: 150px;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.image2{
+	margin: 2em 1em 2em 0;
+	width: 47.85%;
+}
+
+.image3{
+	margin: 2em 0 2em 1em;
+	width: 47.85%;
+}
+
+.small-images{
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.image4{
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.piece p{
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 75em) {
+	
+	.image2{
+		width: 47.75%;
+	}
+	
+	.image3{
+		width: 47.75%;
+	}
+}
+
+@media only screen and (max-width: 72em) {
+	
+	.image2{
+		width: 47.65%;
+	}
+	
+	.image3{
+		width: 47.65%;
+	}
+}
+
+@media only screen and (max-width: 69em) {
+	
+	.image2{
+		width: 47.55%;
+	}
+	
+	.image3{
+		width: 47.55%;
+	}
+}
+
+@media only screen and (max-width: 66em) {
+	
+	.image2{
+		width: 47.45%;
+	}
+	
+	.image3{
+		width: 47.45%;
+	}
+}
+
+@media only screen and (max-width: 63em) {
+	
+	.image2{
+		width: 47.35%;
+	}
+	
+	.image3{
+		width: 47.35%;
+	}
+}
+
+@media only screen and (max-width: 61em) {
+	
+	.image2{
+		width: 47.25%;
+	}
+	
+	.image3{
+		width: 47.25%;
+	}
+}
+
+@media only screen and (max-width: 59em) {
+	
+	.image2{
+		width: 100%;
+		margin: 1em 0 0;
+	}
+	
+	.image3{
+		width: 100%;
+		margin: 1em 0;
+	}
+}
+
+@media only screen and (max-width: 20em) {
+	
+	.piece h2{
+		font-size: 30px;
+	}
+}
+
+/*PROJECT PAGE END*/
+
+/*FOOTER*/
+
+footer{
+	background-color: #E3E3E3;
+	position: absolute;
+	width: 100%
+}
+
+.footer-logo{
+	width: 60px;	
+	margin: 1em;
+}
+
+footer p{
+	text-align: right;
+	position: absolute;
+	display: inline;
+	right: 30px;
+	bottom: 20px;
+}
+
+/*FOOTER END*/

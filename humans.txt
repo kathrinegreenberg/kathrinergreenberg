@@ -1,0 +1,22 @@
+# TEAM 
+
+Designer & developper: Thomas J Bradley 
+Site: http://thomasjbradley.ca
+GitHub: http://github.com/thomasjbradley
+Twitter: @thomasjbradley 
+Location: Ottawa, Ontario
+
+---
+
+# THANKS 
+
+Slideshow from Same Person <http://slideshow.com>
+Big Image © Another Person <http://geddyimages.com>
+
+---
+
+# TECHNOLOGY 
+
+-Sublime Text
+-GitHub
+-Hover.com
