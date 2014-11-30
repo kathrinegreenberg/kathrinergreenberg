@@ -31,6 +31,7 @@ header{
 
 .logo {
 	margin: 15px;
+	width: 6%;
 }
 
 .nav-btn, 
@@ -233,7 +234,7 @@ h2{
 
 .view-first .mask {
     opacity: 0;
-    background-color: rgba(30,30,30, 0.7); 
+    background-color: rgba(201,229,206, 0.7); 
     transition: all 0.4s ease-in-out;
 }
 
