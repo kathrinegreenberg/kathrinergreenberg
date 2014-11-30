@@ -37,10 +37,10 @@ header{
 .nav-btn:link, 
 .nav-btn:visited{
 	display: block;
-	height: 40px;
-	width: 40px;
+	height: 60px;
+	width: 60px;
 	position: absolute;
-	top: 30px;
+	top: 25px;
 	right: 2%;
 	background: url(../images/nav-icon.svg) no-repeat right center;
 }
@@ -93,16 +93,23 @@ nav li:active{
 		text-align: center;
 		margin-right: 0;
 		margin-left: 0;
-		background-color: #CCCCCC;
+		background-color: #C9E6CE;
 		padding: 1em;
+		color: white;
+	}
+	
+	nav li:hover,
+	nav li:focus,
+	nav li:active{	
+		color: grey;
 	}
 	
 	.dark{
-		background-color: #B2B2B2;
+		background-color: #90D2C1;
 	}
 	
 	.darker{
-		background-color: #8A8A8A;
+		background-color: #70C8B9;
 	}
 }
 
@@ -198,7 +205,8 @@ h2{
 }
 
 .view .mask{
-	width: 40%;
+	width: 525px;
+	height: 375px;
 	position: absolute;
 	overflow: hidden;
 	top: 0;
