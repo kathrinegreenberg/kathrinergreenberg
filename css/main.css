@@ -58,7 +58,7 @@ nav li:visited{
 	list-style: none;
 	float: right;
 	margin: 0 1em;
-	color: grey;
+	color: #858585;
 }
 
 nav li:hover,
@@ -101,7 +101,7 @@ nav li:active{
 	nav li:hover,
 	nav li:focus,
 	nav li:active{	
-		color: grey;
+		color: #858585;
 	}
 	
 	.dark{
@@ -109,7 +109,7 @@ nav li:active{
 	}
 	
 	.darker{
-		background-color: #70C8B9;
+		background-color: #49BDB5;
 	}
 }
 

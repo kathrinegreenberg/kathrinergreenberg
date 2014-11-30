@@ -3,9 +3,9 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 792 1224" enable-background="new 0 0 792 1224" xml:space="preserve">
 <g id="open">
-	<rect x="198" y="443.8" fill="#71C7B8" width="396" height="59.4"/>
-	<rect x="198" y="582.4" fill="#71C7B8" width="396" height="59.4"/>
-	<rect x="198" y="721" fill="#71C7B8" width="396" height="59.4"/>
+	<rect x="198" y="443.8" fill="#49BDB5" width="396" height="59.4"/>
+	<rect x="198" y="582.4" fill="#49BDB5" width="396" height="59.4"/>
+	<rect x="198" y="721" fill="#49BDB5" width="396" height="59.4"/>
 </g>
-<circle fill="none" stroke="#71C7B8" stroke-width="28" stroke-miterlimit="10" cx="396" cy="612" r="367.5"/>
+<circle fill="none" stroke="#49BDB5" stroke-width="28" stroke-miterlimit="10" cx="396" cy="612" r="367.5"/>
 </svg>
